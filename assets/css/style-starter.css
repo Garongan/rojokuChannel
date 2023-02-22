@@ -23907,6 +23907,7 @@ h4.inner-text-title {
 .ctrl-btn.pro-next {
   right: 0;
 }
+
 /* mobile */
 @media (max-width: 576px) {
   .pembatas-navbar {
