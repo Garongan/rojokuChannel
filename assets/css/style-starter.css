@@ -4536,12 +4536,10 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  text-decoration: none;
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  
 }
 
 .navbar-nav {
@@ -18846,7 +18844,7 @@ div#small-dialog iframe {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0;
   font-size: 14px;
-  color: #fff;
+  color: #000;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .5px;
@@ -18906,7 +18904,7 @@ a.dropdown-item.active {
 }
 
 header {
-  background-color: #D9D9D9;
+  background-color: rgba(210, 210, 210, 1);
   padding: 0;
   transition: all 0.4s ease 0s;
   height: 90px;
@@ -18935,7 +18933,6 @@ header.nav-fixed {
   border-radius: 30px 0 0 30px;
   background: rgb(255 255 255 / 25%);
   padding: 8px 15px;
-  color: #fff;
   border: 1px solid transparent;
   border-right: none;
 }
@@ -18956,16 +18953,16 @@ header.nav-fixed {
 
 .search-header button.btn-style:hover {
   color: var(--secondary-color);
-  color: #fff;
+  color: black;
 }
 
 .search-header input::-moz-placeholder {
-  color: #fff;
+  color: #000;
   opacity: .8;
 }
 
 .search-header input::placeholder {
-  color: #fff;
+  color: #000;
   opacity: .8;
 }
 
@@ -23846,9 +23843,10 @@ h4.inner-text-title {
 
 /* //contact section */
 
-.button-partnerArea {
+.button-merah {
   background-color: #FF4747 !important;
   color: white !important;
+
 }
 .button-chatUs {
   background-color: rgba(255, 255, 255, 0.2) !important;
@@ -23914,11 +23912,17 @@ h4.inner-text-title {
   .pembatas-navbar {
       display: none !important;
   }
+  .navbar-brand {
+    width: 70%;
+  }
 }
 /* dekstop */
 @media (min-width: 1200px) {
   
   .pembatas-navbar {
       display: block !important;
+  }
+  .navbar-brand {
+    width: 15%;
   }
 }
