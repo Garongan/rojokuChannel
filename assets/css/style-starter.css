@@ -23857,6 +23857,58 @@ h4.inner-text-title {
 .info-carousel {
   margin-top: 20%;
 }
+.slider {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+  margin: auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider .slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+.slider .item {
+  margin-right: 10px;
+}
+
+.slider .item:last-child {
+  margin-right: 0;
+}
+
+.ctrl {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.ctrl-btn {
+  padding: 20px 20px;
+  min-width: 50px;
+  background: #fff;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+  left: 0;
+}
+
+.ctrl-btn.pro-next {
+  right: 0;
+}
 /* mobile */
 @media (max-width: 576px) {
   .pembatas-navbar {
