@@ -18930,7 +18930,7 @@ header.nav-fixed {
 /* serach */
 .search-header input {
   font-size: 15px;
-  border-radius: 30px 0 0 30px;
+  border-radius: 10px 0 0 10px;
   background: rgb(255 255 255 / 25%);
   padding: 8px 15px;
   border: 1px solid transparent;
@@ -18945,7 +18945,7 @@ header.nav-fixed {
 }
 
 .search-header button.btn-style {
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 10px 10px 0;
   box-shadow: none;
   padding: 6px 16px;
   font-size: 15px;
@@ -23855,6 +23855,7 @@ h4.inner-text-title {
 .info-carousel {
   margin-top: 20%;
 }
+/* slider produk */
 .slider {
   width: 100%;
   height: 40rem;
@@ -23907,6 +23908,7 @@ h4.inner-text-title {
 .ctrl-btn.pro-next {
   right: 0;
 }
+/* /slider produk */
 
 /* mobile */
 @media (max-width: 576px) {
