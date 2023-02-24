@@ -6287,6 +6287,9 @@ fieldset:disabled .btn {
     height: 100%;
     margin: 0;
   }
+  .navbar-brand .img-fluid {
+    max-width: 10rem;
+  }
 
   .modal-fullscreen-xl-down .modal-content {
     height: 100%;
@@ -7114,21 +7117,6 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.fixed-bottom {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1030;
-}
 
 .sticky-top {
   position: -webkit-sticky;
@@ -18843,11 +18831,9 @@ div#small-dialog iframe {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #000;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: .5px;
+  padding: 0rem !important;
 }
 
 .nav-fixed .navbar .navbar-brand {
@@ -19172,33 +19158,31 @@ a.btn-style-primary i {
 
 /* title style */
 h3.title-style {
-  font-size: 44px;
-  line-height: 50px;
+  font-size: 2rem;
+  color: #FF4747;
   font-weight: bold;
 }
 
 h3.title-style span {
-  font-weight: 100;
+  color: #000;
+  font-weight: normal;
 }
 
 @media (max-width:991px) {
   h3.title-style {
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 2rem;
   }
 }
 
 @media (max-width:568px) {
   h3.title-style {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 1rem;
   }
 }
 
 @media (max-width:380px) {
   h3.title-style {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 1rem;
   }
 }
 
@@ -19374,16 +19358,12 @@ h3.title-style span {
 }
 
 .hero-content p {
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 2.23rem;
   color: #fff;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  background: rgb(255 255 255 / 12%);
-  display: inline-block;
-  padding: 6px 30px;
-  border-radius: var(--border-radius-full);
+  font-weight: bold;
+}
+.hero-content p span {
+  font-weight: normal;
 }
 
 .blog-detail-banner .hero-content {
@@ -19394,24 +19374,11 @@ h3.title-style span {
   font-size: 53px;
 }
 
-.hero-content h3 {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  position: relative;
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 12px;
-  margin-left: 6px;
-}
-
 .hero-content h1 {
-  font-size: 65px;
-  line-height: 75px;
-  margin-bottom: 18px;
+  font-size: 5rem;
+  margin-bottom: 10%;
   color: #fff;
-  max-width: 700px;
+  max-width: 90%;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -19431,8 +19398,7 @@ h3.title-style span {
 
 @media (max-width: 1280px) {
   .hero-content h1 {
-    font-size: 55px;
-    line-height: 65px;
+    font-size: 5rem;
   }
 }
 
@@ -19442,15 +19408,13 @@ h3.title-style span {
   }
 
   .hero-content h1 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 1.7rem;
   }
 
   .slick-initialized .banner-slide {
@@ -19495,8 +19459,7 @@ h3.title-style span {
 
 @media (max-width: 568px) {
   .hero-content h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 1.5rem;
   }
 
   .slick-initialized .banner-slide {
@@ -19509,9 +19472,7 @@ h3.title-style span {
   }
 
   .hero-content p {
-    font-size: 14px;
-    line-height: 28px;
-    padding: 6px 22px;
+    font-size: 1rem;
   }
 }
 
@@ -22805,7 +22766,7 @@ h3.title-style span {
   transform: scale(0);
   transition: .5s;
   background-color: rgb(245 71 72 / 80%);
-  padding: 30px;
+  padding: 1rem;
   border-radius: var(--border-radius);
 }
 
@@ -22826,21 +22787,16 @@ h3.title-style span {
   overflow: hidden;
 }
 
-.grids5-info:hover .image-overlay {
-  transform: scale(1);
-}
-
 .image-overlay h4 {
   color: #fff;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 28px;
-  margin-bottom: 18px;
+  font-size: medium;
 }
 
 .image-overlay p {
   color: #fff;
   opacity: 1;
+  font-size: x-small;
 }
 
 a.blog-image .iconic-plus i {
@@ -22853,11 +22809,6 @@ a.blog-image .iconic-plus i {
   padding: 10px;
   transition: .4s ease;
   border-bottom-left-radius: var(--border-radius);
-}
-
-.grids5-info:hover .iconic-plus i {
-  opacity: 0;
-  transition: .4s ease;
 }
 
 /* //home services block */
@@ -23839,6 +23790,9 @@ h4.inner-text-title {
     width: 100%;
     min-height: 300px;
   }
+  .pembatas-navbar {
+    display: none !important;
+  }
 }
 
 /* //contact section */
@@ -23856,58 +23810,7 @@ h4.inner-text-title {
   margin-top: 20%;
 }
 /* slider produk */
-.slider {
-  width: 100%;
-  height: 40rem;
-  position: relative;
-  margin: auto;
-  overflow-y: hidden;
-  overflow-x: scroll;
-}
-.slider::-webkit-scrollbar {
-  display: none;
-}
-.slider .slide {
-  display: flex;
-  position: absolute;
-  left: 0;
-  transition: 0.3s left ease-in-out;
-}
-.slider .item {
-  margin-right: 10px;
-}
 
-.slider .item:last-child {
-  margin-right: 0;
-}
-
-.ctrl {
-  text-align: center;
-  margin-top: 5px;
-}
-
-.ctrl-btn {
-  padding: 20px 20px;
-  min-width: 50px;
-  background: #fff;
-  border: none;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-
-  position: absolute;
-  top: 50%;
-  margin-top: -27.5px;
-}
-
-.ctrl-btn.pro-prev {
-  left: 0;
-}
-
-.ctrl-btn.pro-next {
-  right: 0;
-}
 /* /slider produk */
 
 /* mobile */
