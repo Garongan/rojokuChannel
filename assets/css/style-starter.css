@@ -645,19 +645,6 @@ progress {
   color: #6c757d;
 }
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
-}
 
 @media (min-width: 576px) {
 
@@ -6630,6 +6617,7 @@ fieldset:disabled .btn {
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 }
 
 .carousel-inner::after {
@@ -11952,6 +11940,11 @@ li {
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
 }
 
@@ -18831,9 +18824,11 @@ div#small-dialog iframe {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #000;
   padding: 0rem !important;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .nav-fixed .navbar .navbar-brand {
@@ -19352,6 +19347,9 @@ h3.title-style span {
   height: 100%;
   z-index: -1;
 }
+.banner-slide .container {
+  margin-top: 10%;
+}
 
 .hero-content {
   color: #ffffff;
@@ -19376,7 +19374,6 @@ h3.title-style span {
 
 .hero-content h1 {
   font-size: 5rem;
-  margin-bottom: 10%;
   color: #fff;
   max-width: 90%;
   font-weight: bold;
@@ -19397,8 +19394,11 @@ h3.title-style span {
 }
 
 @media (max-width: 1280px) {
+  .hero-content p {
+    font-size: 1.8rem;
+  }
   .hero-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -19413,8 +19413,11 @@ h3.title-style span {
 }
 
 @media (max-width: 768px) {
+  .hero-content p {
+    font-size: 1.3rem;
+  }
   .hero-content h1 {
-    font-size: 1.7rem;
+    font-size: 2.9rem;
   }
 
   .slick-initialized .banner-slide {
@@ -23807,10 +23810,26 @@ h4.inner-text-title {
   color: white !important;
 }
 .info-carousel {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 /* slider produk */
+body {
+  background: #eee;
+}
 
+.filter {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+} 
+
+.profiles img {
+  margin-right: -6px;
+}
+
+.col-md-4 {
+  margin-top: 26px;
+}
 /* /slider produk */
 
 /* mobile */
@@ -23821,14 +23840,23 @@ h4.inner-text-title {
   .navbar-brand {
     width: 70%;
   }
+  .carousel .carousel-item .card .card-text{
+    font-size: 0.6rem !important;
+  }
 }
 /* dekstop */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   
   .pembatas-navbar {
       display: block !important;
   }
   .navbar-brand {
     width: 15%;
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.85rem;
   }
 }
