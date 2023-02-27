@@ -5229,7 +5229,7 @@ fieldset:disabled .btn {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #000;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -5264,8 +5264,7 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #FF4747;
 }
 
 .page-item.disabled .page-link {
@@ -23839,6 +23838,14 @@ h4.inner-text-title {
   display: flex;
   justify-content: center;
 }
+/* filter produk */
+.filterDiv {
+  display: none;
+}
+.showProduk {
+  display: block;
+}
+/* /filter produk */
 
 /* mobile */
 @media (max-width: 576px) {
