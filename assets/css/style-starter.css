@@ -23817,6 +23817,10 @@ h4.inner-text-title {
   overflow: hidden;
 }
 /* /slider produk */
+.instagram-embed{
+  overflow-y: scroll;
+  max-height: 842.81px;
+}
 
 /* mobile */
 @media (max-width: 576px) {
@@ -23844,5 +23848,8 @@ h4.inner-text-title {
 @media only screen and (max-width: 1200px) {
   .navbar .navbar-nav .nav-link {
     font-size: 0.85rem;
+  }
+  .instagram-embed {
+    max-height: 823.79px;
   }
 }
