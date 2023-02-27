@@ -23827,6 +23827,7 @@ h4.inner-text-title {
   overflow-y: scroll;
   max-height: 842.81px;
   margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 .instagram-embed::-webkit-scrollbar { width: 0 !important }
 
