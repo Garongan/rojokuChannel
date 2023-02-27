@@ -59,7 +59,13 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
+body::-webkit-scrollbar { width: 0 !important }
+
+body { overflow: -moz-scrollbars-none; }
+
+body { -ms-overflow-style: none; }
 
 hr {
   margin: 1rem 0;
@@ -23820,6 +23826,17 @@ h4.inner-text-title {
 .instagram-embed{
   overflow-y: scroll;
   max-height: 842.81px;
+  margin-top: 1rem;
+}
+.instagram-embed::-webkit-scrollbar { width: 0 !important }
+
+.instagram-embed { overflow: -moz-scrollbars-none; }
+
+.instagram-embed { -ms-overflow-style: none; }
+
+.instagram-embed .col {
+  display: flex;
+  justify-content: center;
 }
 
 /* mobile */
@@ -23833,6 +23850,9 @@ h4.inner-text-title {
   .carousel .carousel-item .card .card-text{
     font-size: 0.6rem !important;
   }
+  .instagram-embed {
+    max-height: 549.31px;
+  }
 }
 /* dekstop */
 @media (min-width: 1024px) {
@@ -23843,13 +23863,16 @@ h4.inner-text-title {
   .navbar-brand {
     width: 15%;
   }
-
+  .instagram-embed {
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+  }
+  .instagram-embed {
+    max-height: 823.79px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .navbar .navbar-nav .nav-link {
     font-size: 0.85rem;
-  }
-  .instagram-embed {
-    max-height: 823.79px;
   }
 }
