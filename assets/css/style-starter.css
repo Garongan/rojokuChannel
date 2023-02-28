@@ -19182,17 +19182,11 @@ h3.title-style span {
   .content-block-title-style {
     font-size: 3.5rem;
   }
-  .instagram-embed {
-    max-height: 803.89px !important;
-  }
 }
 
 @media (max-width:991px) {
   .content-block-title-style {
     font-size: 2.5rem;
-  }
-  .instagram-embed {
-    max-height: 370.82px !important;
   }
 }
 
@@ -23838,17 +23832,15 @@ h4.inner-text-title {
   overflow: hidden;
 }
 /* /slider produk */
+
 .instagram-embed{
   overflow-y: scroll;
-  max-height: 842.81px;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
 }
-.instagram-embed::-webkit-scrollbar { width: 0 !important }
+.hide-scrollbar::-webkit-scrollbar { width: 0 !important }
 
-.instagram-embed { overflow: -moz-scrollbars-none; }
+.hide-scrollbar { overflow: -moz-scrollbars-none; }
 
-.instagram-embed { -ms-overflow-style: none; }
+.hide-scrollbar { -ms-overflow-style: none; }
 
 .instagram-embed .col {
   display: flex;
@@ -23858,11 +23850,38 @@ h4.inner-text-title {
 .filterDiv {
   display: none;
 }
+.filterDiv p {
+  font-size: 0.6rem;
+}
 .showProduk {
   display: block;
 }
 /* /filter produk */
 
+/* youtube emved */
+.youtube-embed{
+  overflow-y: scroll;
+  max-height: 50rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.youtube-embed .col {
+  display: flex;
+  justify-content: center;
+}
+/* /youtube-embed */
+/* berita dan pengumuman */
+.berita-pengumuman{
+  overflow-y: scroll;
+  max-height: 50rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.berita-pengumuman .col {
+  display: flex;
+  justify-content: center;
+}
+/* /berita dan pengumuman */
 /* mobile */
 @media (max-width: 576px) {
   .pembatas-navbar {
@@ -23875,25 +23894,67 @@ h4.inner-text-title {
     font-size: 0.6rem !important;
   }
   .instagram-embed {
-    max-height: 549.31px;
+    max-height: 288.64px;
+    margin-top: 1rem;
+  }
+  .youtube-embed {
+    margin-top: 1rem;
+    max-height: 288.64px;
+  }
+  .berita-pengumuman {
+    max-height: 288.64px;
+  }
+  .berita-pengumuman .card p{
+    font-size: 0.6rem;
+  }
+  .row {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
   }
 }
-/* dekstop */
-@media (min-width: 1024px) {
-  
+@media (min-width: 576px){
+  .instagram-embed {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 768px){
   .pembatas-navbar {
-      display: block !important;
+    display: block !important;
   }
   .navbar-brand {
     width: 15%;
   }
   .instagram-embed {
+    max-height: 370.82px !important;
+  }
+  .youtube-embed {
+    max-height: 370.82px !important;
+  }
+  .berita-pengumuman {
+    max-height: 370.82px !important;
+  }
+}
+@media (min-width: 992px){
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.85rem;
+  }
+  .instagram-embed {
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+    max-height: 803.89px !important;
+  }
+  .youtube-embed {
     margin-top: 0rem;
     margin-left: 0.5rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media (min-width: 1200px) {
   .navbar .navbar-nav .nav-link {
     font-size: 0.85rem;
+  }
+}
+@media (min-width: 1400px) {
+  .instagram-embed {
+    max-height: 833.21px;
   }
 }
