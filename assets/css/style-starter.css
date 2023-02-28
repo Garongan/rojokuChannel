@@ -19158,9 +19158,19 @@ a.btn-style-primary i {
 
 /* title style */
 h3.title-style {
-  font-size: 2rem;
+  
   color: #FF4747;
   font-weight: bold;
+}
+
+.content-block-title-style {
+  color: #FFF;
+  font-weight: lighter;
+  font-size: 5rem;
+}
+
+.content-block-title-style span {
+  font-weight: 500;
 }
 
 h3.title-style span {
@@ -19168,21 +19178,27 @@ h3.title-style span {
   font-weight: normal;
 }
 
+@media (max-width:1200px) {
+  .content-block-title-style {
+    font-size: 3.5rem;
+  }
+  .instagram-embed {
+    max-height: 803.89px !important;
+  }
+}
+
 @media (max-width:991px) {
-  h3.title-style {
-    font-size: 2rem;
+  .content-block-title-style {
+    font-size: 2.5rem;
+  }
+  .instagram-embed {
+    max-height: 370.82px !important;
   }
 }
 
 @media (max-width:568px) {
-  h3.title-style {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width:380px) {
-  h3.title-style {
-    font-size: 1rem;
+  .content-block-title-style {
+    font-size: 1.5rem;
   }
 }
 
