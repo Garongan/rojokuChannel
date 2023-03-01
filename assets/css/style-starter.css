@@ -23882,7 +23882,7 @@ h4.inner-text-title {
   justify-content: center;
 }
 /* /berita dan pengumuman */
-.paginasi-bawah {
+.pagination-info {
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -23920,6 +23920,9 @@ h4.inner-text-title {
 @media (min-width: 576px){
   .instagram-embed {
     margin-top: 1rem;
+  }
+  .filterDiv p {
+    font-size: 1rem;
   }
 }
 @media (min-width: 768px){
