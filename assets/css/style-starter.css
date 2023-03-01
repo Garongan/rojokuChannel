@@ -23887,6 +23887,13 @@ h4.inner-text-title {
   padding-left: 0;
   list-style: none;
 }
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 /* mobile */
 @media (max-width: 576px) {
   .pembatas-navbar {
