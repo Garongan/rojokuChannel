@@ -73,7 +73,13 @@ jQuery("[data-bgcolor]").each(function () {
             $(function() {
             // Number of items and limits the number of items per page
             var numberOfItems = $("#product-list .showProduk").length;
-            var limitPerPage = 4;
+            var limitPerPage;
+            if ($(window).width() < 576) {
+                limitPerPage = 2;
+             }
+             else {
+                limitPerPage = 4;
+            }
             // Total pages rounded upwards
             var totalPages = Math.ceil(numberOfItems / limitPerPage);
             // Number of buttons at the top, not counting prev/next,
