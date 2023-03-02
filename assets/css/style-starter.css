@@ -23310,30 +23310,13 @@ h4.number {
   z-index: -1;
 }
 
-.w3l-footer-16 h3 {
-  font-size: 20px;
-  line-height: 25px;
-  margin-bottom: 30px;
+.w3l-footer-16 h2 {
   font-weight: bold;
-  color: #fff;
+  color: #FF4747;
 }
-
-.w3l-footer-16 a.footer-logo {
+.w3l-footer-16 h2 span {
+  font-weight: normal;
   color: #fff;
-  font-size: 32px;
-  font-weight: 800;
-}
-
-.w3l-footer-16 a.footer-logo span {
-  font-weight: 300;
-}
-
-.footer-contact-list li,
-.footer-contact-list li a {
-  font-size: 16px;
-  color: #fff;
-  opacity: .9;
-  line-height: 26px;
 }
 
 .footer-contact-list li a:hover {
@@ -23344,82 +23327,34 @@ h4.number {
 .w3l-footer-16 .footer-gd-16 li {
   display: block;
   list-style: none;
-  margin: 10px 0;
-}
-
-.w3l-footer-16 .footer-gd-16 li a {
-  font-size: 16px;
-  line-height: 26px;
   color: #fff;
   opacity: .9;
 }
 
-.w3l-footer-16 .footer-gd-16 li a:hover {
+.w3l-footer-16 .footer-gd-16 li:hover {
   color: var(--primary-color);
   opacity: 1;
 }
 
 .w3l-footer-16 p {
   color: #fff;
-  opacity: .8;
-  font-size: 16px;
 }
 
 .below-section {
   border-top: 1px solid #676565;
 }
 
-.w3l-footer-16 p.copy-text {
-  color: #fff;
+.w3l-footer-16 .copy-text {
+  color: #FFF;
 }
-
-.w3l-footer-16 p.copy-text a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.w3l-footer-16 p.copy-text a:hover {
-  color: var(--primary-color);
-}
-
-.w3l-footer-16 ul.social li,
-.w3l-footer-16 ul.jst-link li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.w3l-footer-16 ul.social li a {
-  color: #fff;
-  display: inline-block;
-  border-radius: 50%;
-  text-align: center;
-  margin-right: 12px;
-  font-size: 15px;
-}
-
-.w3l-footer-16 ul.social li:last-child a {
-  margin-right: 0px;
-}
-
-.w3l-footer-16 ul.social li a:hover {
-  color: var(--primary-color);
-}
-
-.w3l-footer-16 ul.social li a span {
-  font-size: 14px;
-  line-height: 32px;
-}
-
-.w3l-footer-16 ul.list-footer-block li {
+.brand-logo img{
+  max-height: 50px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  opacity: .9;
-  margin-bottom: 8px;
-  text-transform: capitalize;
-  font-size: 15px;
+  vertical-align: middle !important;
 }
+
 
 @media screen and (max-width: 1190px) {
   .w3l-footer-16 h3 {
@@ -23894,6 +23829,9 @@ h4.inner-text-title {
   left: 0;
   z-index: 1030;
 }
+.title-footer{
+
+}
 /* mobile */
 @media (max-width: 576px) {
   .pembatas-navbar {
@@ -23922,6 +23860,9 @@ h4.inner-text-title {
   .row {
     margin-left: 0rem;
     margin-right: 0rem;
+  }
+  .brand-logo img {
+    max-height: 30px;
   }
 }
 @media (min-width: 576px){
