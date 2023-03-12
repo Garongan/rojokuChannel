@@ -56,16 +56,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #FBEEEB;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   overflow-x: hidden;
 }
-body::-webkit-scrollbar { width: 0 !important }
-
-body { overflow: -moz-scrollbars-none; }
-
-body { -ms-overflow-style: none; }
 
 hr {
   margin: 1rem 0;
@@ -4938,11 +4933,13 @@ fieldset:disabled .btn {
 
 .card-title {
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0;
+  text-align: left;
 }
 
 .card-text:last-child {
@@ -8331,7 +8328,7 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #FBEEEB !important;
 }
 
 .bg-dark {
@@ -11764,7 +11761,7 @@ fieldset:disabled .btn {
   --primary-color: #F54748;
   --secondary-color: #f48924;
   --font-color: #363636;
-  --bg-color: #fff;
+  --bg-color: #FBEEEB;
   --heading-color: #060606;
   --border-radius: 8px;
   --border-radius-full: 30px;
@@ -11808,13 +11805,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background: var(--bg-color);
-  color: var(--font-color);
-}
 
 body a,
 button,
@@ -19158,8 +19148,8 @@ a.btn-style-primary i {
 
 /* title style */
 h3.title-style {
-  
-  color: #FF4747;
+  margin-top: 0.5rem;
+  color: #FF9830;
   font-weight: bold;
 }
 
@@ -19174,7 +19164,7 @@ h3.title-style {
 }
 
 h3.title-style span {
-  color: #000;
+  color: #AC7769;
   font-weight: normal;
 }
 
@@ -22949,10 +22939,6 @@ a.blog-image .iconic-plus i {
 
 /* //about block */
 
-/* home page service grids */
-.home-services {
-  background-color: var(--bg-light);
-}
 
 .box-wrap {
   padding: 40px 30px;
@@ -23750,8 +23736,8 @@ h4.inner-text-title {
 
 /* //contact section */
 
-.button-merah {
-  background-color: #FF4747 !important;
+.button-primary {
+  background-color: #FF9830 !important;
   color: white !important;
 
 }
@@ -23897,7 +23883,7 @@ h4.inner-text-title {
   .instagram-embed {
     margin-top: 0rem;
     margin-left: 0.5rem;
-    max-height: 803.89px !important;
+    max-height: 941.219px !important;
   }
   .youtube-embed {
     margin-top: 0rem;
@@ -23907,14 +23893,6 @@ h4.inner-text-title {
 }
 @media (min-width: 1200px) {
   .navbar .navbar-nav .nav-link {
-    font-size: 0.85rem;
-  }
-}
-@media (min-width: 1400px) {
-  .instagram-embed {
-    max-height: 833.21px;
-  }
-  .youtube-embed {
-    max-height: 469.74px;
+    font-size: 1rem;
   }
 }
