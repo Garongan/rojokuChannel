@@ -11759,7 +11759,7 @@ fieldset:disabled .btn {
 :root {
   --primary-color: #FF9830;
   --secondary-color: #AC7769;
-  --font-color: #AC7769;
+  --font-color: #000;
   --bg-color: #FBEEEB;
   --heading-color: #060606;
   --border-radius: 8px;
@@ -18932,12 +18932,12 @@ header.nav-fixed {
 }
 
 .search-header input::-moz-placeholder {
-  color: #000;
+  color: var(--font-color);
   opacity: .8;
 }
 
 .search-header input::placeholder {
-  color: #000;
+  color: var(--font-color);
   opacity: .8;
 }
 
@@ -19163,7 +19163,7 @@ h3.title-style {
 }
 
 h3.title-style span {
-  color: #AC7769;
+  color: var(--secondary-color);
   font-weight: normal;
 }
 
@@ -23739,10 +23739,12 @@ h4.inner-text-title {
   background-color: #FF9830 !important;
   color: white !important;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important;
-
+  width: fit-content;
 }
 .button-secondary {
   background-color: rgba(255, 255, 255, 0.2) !important;
+  box-sizing: border-box;
+  border: 1px solid #fff;
   color: white !important;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important;
 }
@@ -23771,9 +23773,6 @@ h4.inner-text-title {
 /* filter produk */
 .filterDiv {
   display: none;
-}
-.filterDiv p {
-  font-size: 0.6rem;
 }
 .showProduk {
   display: block;
@@ -23841,18 +23840,18 @@ body {
     font-size: 0.6rem !important;
   }
   .instagram-embed {
-    max-height: 18.04rem;
+    max-height: 33.248rem;
     margin-top: 1rem;
   }
   .youtube-embed {
     margin-top: 1rem;
-    max-height: 18.04rem;
+    max-height: 22.426rem;
   }
   .berita-pengumuman {
     max-height: 18.04rem;
   }
-  .berita-pengumuman .card p{
-    font-size: 0.6rem;
+  .berita-pengumuman img {
+    max-width: 90%;
   }
   .row {
     margin-left: 0rem;
@@ -23867,6 +23866,11 @@ body {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     font-size: 1rem;
+  }
+  .button-banner svg{
+    width: 1rem;
+    margin-right: 0.5rem !important;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -23889,10 +23893,11 @@ body {
     width: 15%;
   }
   .instagram-embed {
-    max-height: 23.176rem;
+    max-height: 28.972rem;
   }
   .youtube-embed {
-    max-height: 23.176rem;
+    padding-left: calc;
+    max-height: 28.972rem;
   }
   .berita-pengumuman {
     max-height: 23.176rem;
