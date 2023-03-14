@@ -6701,7 +6701,7 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: center;
   width: fit-content;
-  padding: 1rem;
+  padding: 1.25rem;
   color: var(--primary-color);
   text-align: center;
   background: none;
@@ -23824,6 +23824,9 @@ h4.inner-text-title {
   transform: scale(1.05);
 }
 #isi-kategori {
+  scroll-behavior: smooth;
+}
+body {
   scroll-behavior: smooth;
 }
 /* mobile */
