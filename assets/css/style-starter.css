@@ -23860,7 +23860,7 @@ body {
   .brand-logo img {
     max-height: 30px;
   }
-  .button-banner {
+  .button-banner.button-primary {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.75rem;
@@ -23868,7 +23868,7 @@ body {
     font-size: 1rem;
   }
   .button-banner svg{
-    width: 1rem;
+    width: 20px;
     margin-right: 0.5rem !important;
     margin-bottom: 0 !important;
   }
@@ -23902,12 +23902,18 @@ body {
   .berita-pengumuman {
     max-height: 23.176rem;
   }
-  .button-banner {
+  .button-banner.button-secondary,
+  .button-banner.button-primary {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 1.25rem;
+  }
+  .button-banner svg{
+    width: 30px;
+    margin-right: 0.75rem !important;
+    margin-bottom: 0 !important;
   }
 }
 @media (min-width: 1200px) {
@@ -23924,11 +23930,17 @@ body {
     margin-left: 0.5rem;
     max-height: 29.859rem;
   }
-  .button-banner {
+  .button-banner.button-secondary,
+  .button-banner.button-primary {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+  }
+  .button-banner svg{
+    width: 40px;
+    margin-right: 1rem !important;
+    margin-bottom: 0 !important;
   }
 }

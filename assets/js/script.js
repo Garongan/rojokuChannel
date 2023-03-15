@@ -152,9 +152,6 @@ jQuery("[data-bgcolor]").each(function () {
                 $("#previous-page").on("click", function() {
                     return showPage(currentPage - 1);
                 });
-                $(".pagination").on("click", function() {
-                    $("html,body").animate({ scrollTop: 0 }, 0);
-                });
             });
         }
 
@@ -304,9 +301,6 @@ jQuery("[data-bgcolor]").each(function () {
 
             $("#prev").on("click", function() {
                 return showPage(currentPage - 1);
-            });
-            $(".pagination-info").on("click", function() {
-                $("html,body").animate({ scrollTop: 0 }, 0);
             });
         });
 // /paginasi-bawah
