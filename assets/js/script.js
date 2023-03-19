@@ -223,10 +223,10 @@ jQuery("[data-bgcolor]").each(function () {
         var numberOfItems = $(".info-list .content").length;
         var limitPerPage;
         if ($(window).width() < 576) {
-            limitPerPage = 2;
+            limitPerPage = 1;
         }
         else {
-            limitPerPage = 4;
+            limitPerPage = 3;
         }
         // Total pages rounded upwards
         var totalPages = Math.ceil(numberOfItems / limitPerPage);
@@ -302,5 +302,6 @@ jQuery("[data-bgcolor]").each(function () {
             $("#prev").on("click", function() {
                 return showPage(currentPage - 1);
             });
+            
         });
 // /paginasi-bawah
