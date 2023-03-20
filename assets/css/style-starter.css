@@ -18963,6 +18963,7 @@ header.nav-fixed {
     padding: 20px;
     margin-top: 16px;
     box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
+    background-color: var(--bg-color);
   }
 
   .navbar-expand-lg .navbar-nav .nav-item {
@@ -23721,6 +23722,9 @@ h4.inner-text-title {
 body {
   scroll-behavior: smooth;
 }
+.testimoni-container {
+  overflow: auto;
+}
 /* mobile */
 @media (max-width: 576px) {
   .pembatas-navbar {
@@ -23739,6 +23743,9 @@ body {
   .youtube-embed {
     margin-top: 1rem;
     max-height: 22.426rem;
+  }
+  .testimoni-container {
+    max-height: 29.25rem;
   }
   .berita-pengumuman {
     max-height: 18.04rem;
@@ -23795,6 +23802,9 @@ body {
   .berita-pengumuman {
     max-height: 23.176rem;
   }
+  .testimoni-container {
+    max-height: 19.875rem;
+  }
   .button-banner.button-secondary,
   .button-banner.button-primary {
     padding-top: 0.75rem;
@@ -23822,6 +23832,9 @@ body {
     margin-top: 0rem;
     margin-left: 0.5rem;
     max-height: 29.859rem;
+  }
+  .testimoni-container {
+    max-height: 14.625rem;
   }
   .button-banner.button-secondary,
   .button-banner.button-primary {
