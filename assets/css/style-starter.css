@@ -8122,6 +8122,9 @@ fieldset:disabled .btn {
 .ps-4 {
   padding-left: 1.5rem !important;
 }
+.ps-4-5 {
+  padding-left: 1.75rem !important;
+}
 
 .ps-5 {
   padding-left: 3rem !important;
@@ -19115,7 +19118,7 @@ a.btn-style-primary i {
 
 /* title style */
 h3.title-style {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: #FF9830;
   font-weight: bold;
 }
@@ -23653,6 +23656,7 @@ h4.inner-text-title {
 
 .instagram-embed {
   overflow-y: scroll;
+  scroll-padding-bottom: 1rem;
 }
 .hide-scrollbar::-webkit-scrollbar { width: 0 !important }
 
@@ -23663,6 +23667,9 @@ h4.inner-text-title {
 .instagram-embed .col {
   display: flex;
   justify-content: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 1rem;
 }
 /* filter produk */
 .filterDiv {
@@ -23676,13 +23683,14 @@ h4.inner-text-title {
 /* youtube emved */
 .youtube-embed{
   overflow-y: scroll;
-  max-height: 50rem;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
+  scroll-padding-bottom: 1rem;
 }
 .youtube-embed .col {
   display: flex;
   justify-content: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 1rem;
 }
 /* /youtube-embed */
 /* berita dan pengumuman */
@@ -23775,9 +23783,6 @@ body {
 }
 
 @media (min-width: 576px){
-  .instagram-embed {
-    margin-top: 1rem;
-  }
   .filterDiv p {
     font-size: 1rem;
   }
@@ -23824,14 +23829,10 @@ body {
     font-size: 1rem;
   }
   .instagram-embed {
-    margin-top: 0rem;
-    margin-left: 0.5rem;
-    max-height: 55.256rem;
+    max-height: 54.98rem;
   }
   .youtube-embed {
-    margin-top: 0rem;
-    margin-left: 0.5rem;
-    max-height: 29.859rem;
+    max-height: 29.359rem;
   }
   .testimoni-container {
     max-height: 14.625rem;
