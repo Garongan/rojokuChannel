@@ -8439,7 +8439,7 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .float-sm-start {
     float: left !important;
   }
@@ -23646,7 +23646,7 @@ h4.inner-text-title {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important;
 }
 .info-carousel {
-  margin-top: 10%;
+  margin-top: 15%;
 }
 /* slider produk */
 .list-wrapper {
@@ -23696,9 +23696,8 @@ h4.inner-text-title {
 /* berita dan pengumuman */
 .berita-pengumuman{
   overflow-y: scroll;
-  max-height: 50rem;
+  scroll-padding-bottom: 1rem;
   margin-top: 1rem;
-  padding-bottom: 1rem;
 }
 .berita-pengumuman .col {
   display: flex;
@@ -23768,17 +23767,13 @@ body {
   .brand-logo img {
     max-height: 30px;
   }
-  .button-banner.button-primary {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    font-size: 1rem;
-  }
   .button-banner svg{
     width: 20px;
     margin-right: 0.5rem !important;
     margin-bottom: 0 !important;
+  }
+  .info-carousel {
+    margin-top: 30%;
   }
 }
 
@@ -23805,12 +23800,18 @@ body {
     max-height: 28.972rem;
   }
   .berita-pengumuman {
-    max-height: 23.176rem;
+    max-height: 22.176rem;
   }
   .testimoni-container {
     max-height: 19.875rem;
   }
-  .button-banner.button-secondary,
+  .button-banner.button-secondary{
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.25rem;
+  }
   .button-banner.button-primary {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -23837,7 +23838,13 @@ body {
   .testimoni-container {
     max-height: 14.625rem;
   }
-  .button-banner.button-secondary,
+  .button-banner.button-secondary {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1.75rem;
+  }
   .button-banner.button-primary {
     padding-top: 1rem;
     padding-bottom: 1rem;
