@@ -38,19 +38,19 @@ Author URL: http://w3layouts.com
                         </li>
                         <span class="pembatas-navbar">|</span>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Produk</a>
+                            <a class="nav-link" href="product.html">Produk</a>
                         </li>
                         <span class="pembatas-navbar">|</span>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cara Kerja</a>
+                            <a class="nav-link" href="cara-kerja.html">Cara Kerja</a>
                         </li>
                         <span class="pembatas-navbar">|</span>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Partner</a>
+                            <a class="nav-link" href="partner.html">Partner</a>
                         </li>
                         <span class="pembatas-navbar">|</span>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <form action="#error" method="GET" class="d-flex search-header">
@@ -70,7 +70,7 @@ Author URL: http://w3layouts.com
         <div class="py-lg-5">
             <div class="container-fluid pt-4 pb-sm-4">
                 <h1 class="display-3 mb-3 text-body">Tentang Kami</h1>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center info-carousel">
                     <h6 class="m-0">
                         <a class="text-primary" href="index.html">Home</a>
                     </h6>
@@ -460,45 +460,6 @@ Author URL: http://w3layouts.com
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- //common jquery plugin -->
 
-    <!-- magnific-popup javascript -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.popup-with-zoom-anim').magnificPopup({
-                type: 'inline',
-
-                fixedContentPos: false,
-                fixedBgPos: true,
-
-                overflowY: 'auto',
-
-                closeBtnInside: true,
-                preloader: false,
-
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-zoom-in'
-            });
-
-            $('.popup-with-move-anim').magnificPopup({
-                type: 'inline',
-
-                fixedContentPos: false,
-                fixedBgPos: true,
-
-                overflowY: 'auto',
-
-                closeBtnInside: true,
-                preloader: false,
-
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-slide-bottom'
-            });
-        });
-    </script>
-    <!-- //magnific-popup javascript -->
-
     <!-- theme switch js (light and dark)-->
     <script src="assets/js/theme-change.js"></script>
     <!-- //theme switch js (light and dark)-->
@@ -532,6 +493,16 @@ Author URL: http://w3layouts.com
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap -->
+    <script async>
+        // loader
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                $('body').addClass('noscroll');
+            } else {
+                $('body').removeClass('noscroll');
+            }
+        };
+    </script>
     <!-- //Js scripts -->
 </body>
 

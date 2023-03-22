@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROJOKU CHANNEL - Produk</title>
+    <!-- Template CSS Style link -->
+    <link rel="preload" href="assets/css/style-starter.css" as="style" />
+    <link rel="preload" href="assets/js/script.js" as="script" />
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+                    <ul class="navbar-nav my-3 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <div class="pembatas-navbar"><span>|</span></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Tentang Kami</a>
+                        </li>
+                        <span class="pembatas-navbar">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="product.html">Produk</a>
+                        </li>
+                        <span class="pembatas-navbar">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cara-kerja.html">Cara Kerja</a>
+                        </li>
+                        <span class="pembatas-navbar">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partner.html">Partner</a>
+                        </li>
+                        <span class="pembatas-navbar">|</span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form action="#error" method="GET" class="d-flex search-header">
+                        <input style="color: #AC7769" class="form-control border" type="search" placeholder="Cari Produk ..." aria-label="Search" required>
+                        <button class="btn btn-style" type="submit" style="background-color: #FF9830; color: white;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3ZM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8Z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- inner banner -->
+    <section class="inner-banner py-5">
+        <div class="py-lg-5">
+            <div class="container-fluid pt-4 pb-sm-4">
+                <h1 class="display-3 mb-3 text-body">Produk Unggulan Kami</h1>
+                <div class="d-flex justify-content-center info-carousel">
+                    <h6 class="m-0">
+                        <a class="text-primary" href="index.html">Home</a>
+                    </h6>
+                    <h6 class="m-0 px-3 text-body">/</h6>
+                    <h6 class="m-0">
+                        <a class="text-body" href="product.html">Produk</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //inner banner -->
+
+    <!-- produk kategori -->
+
+    <section class="py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <!-- kategori -->
+            <div class="row border border-1 rounded shadow">
+                <div class="row mx-auto">
+                    <h3 class="title-style text-start mb-lg-5 mb-4">PRODUCT <span>CATEGORY</span></h3>
+                </div>
+                <div class="row mx-auto carousel">
+                    <div class="col-auto">
+                        <!-- prev -->
+                        <button class="mb-5 carousel-control-prev" id="slideLeft">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2Zm8 15H11.85l5.58 5.573L16 24l-8-8l8-8l1.43 1.393L11.85 15H24Z"/><path fill="none" d="m16 8l1.43 1.393L11.85 15H24v2H11.85l5.58 5.573L16 24l-8-8l8-8z"/></svg>
+                        </button>
+                        <!-- /prev -->
+                    </div>
+                    <!-- kategori list -->
+                    <div class="col-12">
+                        <ul class="container d-flex hide-scrollbar flex-nowrap row flex-row rounded" id="isi-kategori" style="overflow-x: scroll;">
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="active border-0 scrollToProduk" onclick="filterSelection('all')">
+                                    <img loading="lazy" src="assets/images/s8.jpg" class="card-img-top mt-3" alt="all produk">
+                                    <div class="card-body">
+                                        <p class="card-text">All Produk</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-1')">
+                                    <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top mt-3" alt="kategori 1">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 1</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-2')">
+                                    <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top mt-3" alt="kategori 2">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 2</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-3')">
+                                    <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top mt-3" alt="kategori 3">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 3</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('all')">
+                                    <img loading="lazy" src="assets/images/s8.jpg" class="card-img-top mt-3" alt="all produk">
+                                    <div class="card-body">
+                                        <p class="card-text">All Produk</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-1')">
+                                    <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top mt-3" alt="kategori 1">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 1</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="active border-0 scrollToProduk" onclick="filterSelection('all')">
+                                    <img loading="lazy" src="assets/images/s8.jpg" class="card-img-top mt-3" alt="all produk">
+                                    <div class="card-body">
+                                        <p class="card-text">All Produk</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-1')">
+                                    <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top mt-3" alt="kategori 1">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 1</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-2')">
+                                    <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top mt-3" alt="kategori 2">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 2</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-3')">
+                                    <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top mt-3" alt="kategori 3">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 3</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('all')">
+                                    <img loading="lazy" src="assets/images/s8.jpg" class="card-img-top mt-3" alt="all produk">
+                                    <div class="card-body">
+                                        <p class="card-text">All Produk</p>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="kategori-list" style="width: 10rem;">
+                                <button type="button" class="border-0 scrollToProduk" onclick="filterSelection('kategori-1')">
+                                    <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top mt-3" alt="kategori 1">
+                                    <div class="card-body">
+                                        <p class="card-text">Kategori 1</p>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /kategori list -->
+                    <div class="col-auto">
+                        <!-- next -->
+                        <button class="mb-5 carousel-control-next me-2" id="slideRight" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M2 16A14 14 0 1 0 16 2A14 14 0 0 0 2 16Zm6-1h12.15l-5.58-5.607L16 8l8 8l-8 8l-1.43-1.427L20.15 17H8Z"/><path fill="none" d="m16 8l-1.43 1.393L20.15 15H8v2h12.15l-5.58 5.573L16 24l8-8l-8-8z"/></svg>
+                        </button>
+                        <!-- /next -->
+                    </div>
+                </div>
+            </div>
+            <!-- /kategori -->
+            <!-- produk -->
+            <div class="row border border-1 rounded shadow mt-3 list-kategori-produk">
+                <div class="row mx-auto">
+                    <div class="col">
+                        <h3 class="title-style text-start mb-lg-5 mb-4">ALL <span>PRODUCT</span></h3>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <!-- shop header -->
+                    <div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+                        <div class="product-categori">
+                            <div class="search-product">
+                                <form action="#">
+                                    <input class="form-control" placeholder="Ketik Nama Produk" type="text">
+                                    <button type="submit"> <i class="fa fa-search"></i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-sm-12 col-xs-12">
+                        <div class="right-product-box">
+                            <div class="product-item-filter row">
+                                <div class="col-12 col-sm-8 text-center text-sm-left">
+                                    <div class="toolbar-sorter-right">
+                                        <span>Sort by </span>
+                                        <select class="form-control">
+                                        <option data-display="Select">Nothing</option>
+                                        <option value="3">Low Price → High Price</option>
+                                        </select>
+                                        </div>
+                                    <p>Showing all 4 results</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /shop header -->
+                    <!-- produck -->
+                    <div class="container">
+                        <ul class="tab-content row mt-5 justify-content-center">
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-1">
+                                <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                <p class="card-title">Produk 1</p>
+                                <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-2">
+                                <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 2</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-3">
+                                <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 3</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-4">
+                                <img loading="lazy" src="assets/images/s4.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 4</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-5">
+                                <img loading="lazy" src="assets/images/s5.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 5</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-6">
+                                <img loading="lazy" src="assets/images/s6.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 6</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-7">
+                                <img loading="lazy" src="assets/images/s7.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 7</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-8">
+                                <img loading="lazy" src="assets/images/s8.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 8</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-1">
+                                <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 1</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-2">
+                                <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 2</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-3">
+                                <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 3</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-1">
+                                <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 1</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-2">
+                                <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 2</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-3">
+                                <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 3</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-1">
+                                <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 1</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-2">
+                                <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 2</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-3">
+                                <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 3</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-1">
+                                <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 1</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-2">
+                                <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 2</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-3">
+                                <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 3</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-1">
+                                <img loading="lazy" src="assets/images/s1.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 1</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-2">
+                                <img loading="lazy" src="assets/images/s2.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 2</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="filterDiv col-sm-6 col-md-6 col-lg-4 col-xl-4 kategori-3">
+                                <img loading="lazy" src="assets/images/s3.jpg" class="card-img-top" alt="kategori 1">
+                                <div class="card-body">
+                                    <p class="card-title">Produk 4</p>
+                                    <p class="card-subtitle">Harga: xxx.xxx.xxx</p>
+                                    <a href="#?var_value=1" class="btn button-primary d-flex" data-bs-toggle="modal" data-bs-target="#produkModal">
+                                    Lihat
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /procuk -->
+                </div>
+            </div>
+            <!-- /produk -->
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="w3l-footer-16 pt-5 pb-1">
+        <div class="container pt-lg-5 pt-sm-4 pb-sm-2">
+            <div class="row">
+                <div class="col col-lg col-12">
+                    <a class="d-flex align-items-center" href="index.html">
+                        <h2 class="text-break">
+                            ROJOKU<br><span>Perumda Jepara<br>Trade Channel</span>
+                        </h2>
+                    </a>
+                    <p class="mt-3">
+                        Rojoku Perumda Jepara Channel merupakan inkubasi dan akselerator para pelaku usaha
+                        UKM & IKM Kabupaten Jepara untuk di scaleup dan diintegrasikan dalam satu kesatuan
+                        ekosistem bisnis perdagangan. Memperkuat jaringan pemasaran produk merupakan tujuan
+                        utama dari ROJOKU Perumda Jepara Trade Channel
+                    </p>
+                </div>
+                <div class="col col-lg col-12">
+                    <h2>ROJOKU<br><span>Contact And<br>Information</span></h2>
+                    <ul class="footer-gd-16 mt-3">
+                        <li>Jl. Kertanegara no. 23, Kota Solo Jawa Tengah</li>
+                        <li>+62811000000082</li>
+                        <li>officialairafashion.id</li>
+                        <li>www.airafashion.id</li>
+                    </ul>
+                </div>
+                <div class="col col-lg-5 col-12">
+                    <h2>AIRA<span><br>Brand Affiliation<br>and Support</span></h2>
+                    <div class="row mt-3 brand-logo">
+                        <div class="col">
+                            <img src="assets/images/logo-mandiri.png" alt="logo-mandiri">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/logo-agincourt.png" alt="logo=agincourt">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/logo-ballooney.png" alt="logo-ballooney">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/logo-jasatirta.png" alt="logo-jasatirta">
+                        </div>
+                    </div>
+                    <div class="row brand-logo mt-3">
+                        <div class="col">
+                            <img src="assets/images/logo-mandiri.png" alt="logo-mandiri">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/logo-agincourt.png" alt="logo=agincourt">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/logo-ballooney.png" alt="logo-ballooney">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" src="assets/images/logo-jasatirta.png" alt="logo-jasatirta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="below-section text-center pt-1 mt-5">
+                <p class="copy-text">&copy; 2021 ROJOKU TRADE CHANNEL Perumda Aneka Usaha Jepara
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 320 512"><path fill="currentColor" d="M313.553 119.669L209.587 7.666c-9.485-10.214-25.676-10.229-35.174 0L70.438 119.669C56.232 134.969 67.062 160 88.025 160H152v272H68.024a11.996 11.996 0 0 0-8.485 3.515l-56 56C-4.021 499.074 1.333 512 12.024 512H208c13.255 0 24-10.745 24-24V160h63.966c20.878 0 31.851-24.969 17.587-40.331z"/></svg>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- magnific-popup javascript -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+    <!-- //magnific-popup javascript -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+                $(".logo").attr("src", "assets/images/logo1.png");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+                $(".logo").attr("src", "assets/images/logo.png");
+            }
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap -->
+
+    <!-- script slider kategori -->
+    <script>
+        $(document).ready(function () {  
+            document.getElementById('isi-kategori').scrollLeft += 230;
+        })
+        const buttonRight = document.getElementById('slideRight');
+        const buttonLeft = document.getElementById('slideLeft');
+  
+        buttonRight.onclick = function () {
+          document.getElementById('isi-kategori').scrollLeft += 250;
+        };
+        buttonLeft.onclick = function () {
+          document.getElementById('isi-kategori').scrollLeft -= 250;
+        };
+    </script>
+    <!-- /script slider kategori -->
+    <!-- script scroll to produk -->
+    <script>
+        $(".scrollToProduk").click(function() {
+            $('html,body').animate({
+                scrollTop: $(".list-kategori-produk").offset().top});
+        });
+    </script>
+    <!-- /scroll to produk -->
+    <script async>
+        // loader
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                $('body').addClass('noscroll');
+            } else {
+                $('body').removeClass('noscroll');
+            }
+        };
+    </script>
+    <!-- productt script -->
+    <script async src="assets/js/filter.js"></script>
+    <!-- /product script -->
+
+    <!-- //Js scripts -->
+</body>
+</html>
